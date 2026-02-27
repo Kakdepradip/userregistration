@@ -1,0 +1,11 @@
+.example-spacer {
+  flex: 1 1 auto ;
+
+}
+.header{
+    background-color: rgb(113, 160, 214);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+
+}
