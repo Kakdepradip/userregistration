@@ -1,0 +1,33 @@
+.title{
+    background-color: blue;
+    font-family: fantasy;
+    color: white;
+}
+.btn-save{
+     background-color: rgb(14, 199, 44);
+    font-family: fantasy;
+    color: white;
+
+}
+.btn-cancel{
+     background-color: rgb(255, 30, 0);
+    font-family: fantasy;
+    color: white;
+}
+.row{
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+.content{
+    padding-top: 10px;
+}
+.mat-input{
+    width: 50%;
+}
+.action{
+    padding: 0px 25px 20px;
+}
+.action button{
+    flex: 1;
+}

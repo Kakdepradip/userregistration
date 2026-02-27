@@ -1,0 +1,71 @@
+<h1 mat-dialog-title class="title">ADD USER</h1>
+
+<div mat-dialog-content class="content">
+  <div class="row">
+    <mat-form-field appearance="outline" class="mat-input">
+      <mat-label>Select Department</mat-label>
+      <mat-select>
+        <mat-option value="it">IT</mat-option>
+        <mat-option value="hr">HR</mat-option>
+        <mat-option value="sales">SALES</mat-option>
+        <mat-option value="accounts">ACCOUNTS</mat-option>
+        <mat-option value="production">PRODUCTION</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="mat-input">
+      <mat-label>Name</mat-label>
+      <input matInput type="text" placeholder="Ex.Name" />
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <mat-form-field appearance="outline" class="mat-input">
+      <mat-label>Mobile</mat-label>
+      <input matInput type="text" placeholder="Ex.Mobile" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="mat-input">
+      <mat-label>Email</mat-label>
+      <input matInput type="text" placeholder="Ex.abc@gmail.com" />
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <mat-form-field appearance="outline" class="mat-input">
+      <mat-label>Select Date</mat-label>
+      <input matInput [matDatepicker]="picker" />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-radio-group aria-label="Select an option">
+        <mat-label>Gender</mat-label>
+      <mat-radio-button value="male">MALE</mat-radio-button>
+      <mat-radio-button value="female">FEMALE</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <div class="row">
+    <mat-form-field appearance="outline" class="mat-input">
+      <mat-label>Salary</mat-label>
+      <input matInput type="text" placeholder="Ex.Salary" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="mat-input">
+      <mat-label>UserCode</mat-label>
+      <input matInput type="text" placeholder="user code" />
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <section class="example-section">
+  <mat-checkbox class="example-margin">Active?</mat-checkbox>
+  
+</section>
+
+  </div>
+</div>
+
+<div mat-dialog-actions style="justify-content: center;" class="action">
+  <button mat-raised-button class="btn-save">Save</button>
+  <button mat-raised-button class="btn-cancel">Cancel</button>
+</div>
